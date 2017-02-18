@@ -14,6 +14,8 @@
 		DA3AE9431E57CFCC00A162B8 /* FingerPaintApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA3AE9411E57CFCC00A162B8 /* FingerPaintApp.xcdatamodeld */; };
 		DA3AE9451E57CFCC00A162B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3AE9441E57CFCC00A162B8 /* Assets.xcassets */; };
 		DA3AE9481E57CFCC00A162B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3AE9461E57CFCC00A162B8 /* LaunchScreen.storyboard */; };
+		DA3AE9511E57D7F700A162B8 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3AE9501E57D7F700A162B8 /* CustomView.m */; };
+		DA3AE9541E58F07A00A162B8 /* SelectMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3AE9531E58F07A00A162B8 /* SelectMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,11 @@
 		DA3AE9441E57CFCC00A162B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA3AE9471E57CFCC00A162B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA3AE9491E57CFCC00A162B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA3AE94F1E57D7F700A162B8 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		DA3AE9501E57D7F700A162B8 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		DA3AE9521E58F07A00A162B8 /* SelectMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectMenuView.h; sourceTree = "<group>"; };
+		DA3AE9531E58F07A00A162B8 /* SelectMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectMenuView.m; sourceTree = "<group>"; };
+		DA3AE9551E58FE9500A162B8 /* ViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +71,17 @@
 				DA3AE9391E57CFCC00A162B8 /* AppDelegate.m */,
 				DA3AE93B1E57CFCC00A162B8 /* ViewController.h */,
 				DA3AE93C1E57CFCC00A162B8 /* ViewController.m */,
+				DA3AE9551E58FE9500A162B8 /* ViewControllerDelegate.h */,
 				DA3AE93E1E57CFCC00A162B8 /* Main.storyboard */,
 				DA3AE9441E57CFCC00A162B8 /* Assets.xcassets */,
 				DA3AE9461E57CFCC00A162B8 /* LaunchScreen.storyboard */,
 				DA3AE9491E57CFCC00A162B8 /* Info.plist */,
 				DA3AE9411E57CFCC00A162B8 /* FingerPaintApp.xcdatamodeld */,
 				DA3AE9351E57CFCC00A162B8 /* Supporting Files */,
+				DA3AE94F1E57D7F700A162B8 /* CustomView.h */,
+				DA3AE9501E57D7F700A162B8 /* CustomView.m */,
+				DA3AE9521E58F07A00A162B8 /* SelectMenuView.h */,
+				DA3AE9531E58F07A00A162B8 /* SelectMenuView.m */,
 			);
 			path = FingerPaintApp;
 			sourceTree = "<group>";
@@ -154,10 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3AE9511E57D7F700A162B8 /* CustomView.m in Sources */,
 				DA3AE93D1E57CFCC00A162B8 /* ViewController.m in Sources */,
 				DA3AE93A1E57CFCC00A162B8 /* AppDelegate.m in Sources */,
 				DA3AE9371E57CFCC00A162B8 /* main.m in Sources */,
 				DA3AE9431E57CFCC00A162B8 /* FingerPaintApp.xcdatamodeld in Sources */,
+				DA3AE9541E58F07A00A162B8 /* SelectMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
