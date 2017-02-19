@@ -22,17 +22,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
     // Create an instance of custom view that takes in the user's touches and draws images based on them.
-    //CustomView *customView = [[CustomView alloc]initWithFrame:CGRectZero];
     
     CustomView *customView = [[CustomView alloc] initWithFrame:CGRectZero];
     customView.translatesAutoresizingMaskIntoConstraints = NO;
     //customView.backgroundColor = [UIColor blueColor];
     [customView setBackgroundColor: [UIColor colorWithRed:255/255.0f green:50/255.0f blue:60/255.0f alpha:0.2f]];
     [self.view addSubview:customView]; // add to your main view
-
-    // Set up your views and constraints here
+    
+    // Set up the custom view's constraints
     [NSLayoutConstraint constraintWithItem:customView
                                  attribute:NSLayoutAttributeHeight
                                  relatedBy:NSLayoutRelationEqual
@@ -64,11 +62,12 @@
                                 multiplier:1.f constant:50].active = YES;
     
     
+    // Create instance of a color selector menu view
     SelectMenuView *selectMenuView = [[SelectMenuView alloc] initWithFrame:CGRectZero];
     selectMenuView.delegate = self;
     
     selectMenuView.translatesAutoresizingMaskIntoConstraints = NO;
-
+    
     [selectMenuView setBackgroundColor: [UIColor colorWithRed:255/255.0f green:50/255.0f blue:60/255.0f alpha:0.2f]];
     [self.view addSubview:selectMenuView]; // add to your main view
     

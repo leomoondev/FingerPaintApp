@@ -10,8 +10,6 @@
 
 @interface CustomView : UIView {
     NSMutableArray *lines;
-    CGPoint pointA, pointB;
-    BOOL activeLine;
 }
 
 @property UIColor *stroke;
